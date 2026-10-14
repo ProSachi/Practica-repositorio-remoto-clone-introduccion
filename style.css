@@ -1,0 +1,62 @@
+#btn-registrar {
+    background-color: aqua;
+}
+
+#nombre:focus {
+    border: 2px solid rgb(239, 4, 4);
+    outline: none;
+}
+
+#btn-registrar:hover {
+    background-color: rgb(27, 50, 223);
+}
+
+
+#btn-registrar:active {
+    transform: scale(1.25);
+    /* Se reduce un poco el tamaño */
+    background-color: #2980b9;
+    /* Cambia a un azul más oscuro */
+}
+
+
+li:first-child {
+    color: green;
+    text-decoration: underline;
+}
+
+
+
+li:nth-child(2n) {
+    color: rgb(0, 76, 255);
+    font-weight: bold;
+}
+
+li:nth-child(2n+1) {
+    color: rgb(37, 246, 5);
+    font-weight: bold;
+}
+
+li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+li:last-child::before {
+    content: "🔥 ";
+}
+
+li:nth-child(2n+1)::after {
+    content: " 🎉";
+}
+
+
+#parrafo::selection {
+    background-color: yellow;
+    color: red;
+}
+
+#parrafo::first-line {
+    background-color: yellow;
+    color: red;
+}
